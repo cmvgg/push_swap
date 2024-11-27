@@ -2,6 +2,7 @@
 
 make re
 
+mkdir -p exits
 #TEST 1
 ./push_swap a > exits/output_test1.txt
 
