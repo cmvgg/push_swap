@@ -1,1 +1,0 @@
-./test/robustness_test1.sh: line 8: ./push_swap: Argument list too long
