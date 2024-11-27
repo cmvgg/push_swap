@@ -46,15 +46,14 @@ $(NAME): $(OBJS)
 
 ${CHECKER_NAME}: ${CHECKER_OBJS}
 		${CC} ${CFLAGS} ${CHECKER_OBJS} -o ${CHECKER_NAME}
-
 clean:
-	rm -f ${OBJS}
+	rm -f ${OBJS} 
 
 clean_checker:
 	rm -f $(CHECKER_OBJS)
 
 fclean: clean
-	rm -f ${NAME}
+	rm -f ${NAME} exits/*.txt logs/*.log
 
 fclean_checker: clean_checker
 		@rm -f ${CHECKER_NAME}
@@ -65,5 +64,17 @@ fclean_all: clean fclean_checker
 re: fclean all
 
 re_checker: fclean_checker checker
+
+run_test:
+	chmod +x test/automatic_test1.sh
+	./test/automatic_test1.sh
+	chmod +x test/automatic_test2.sh
+	./test/automatic_test2.sh
+	chmod +x test/time_test1.sh
+	./test/time_test1.sh
+	chmod +x test/robustness_test1.sh
+	./test/robustness_test1.sh
+	chmod +x test/automatized_test1.sh
+	./test/automatized_test1.sh
 
 .PHONY: all clean fclean re

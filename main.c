@@ -53,11 +53,11 @@ int	main(int ac, char **av)
 	if (empty_file(av[1]))
 		return (0);
 	if (ac == 1)
-		return (write(2, "Error\n", 6));
+		return (write(1, "Error\n", 6));
 	nb_elem = ft_count_numbers(av);
 	stack_a = ft_list_loading(av);
 	if (stack_a == NULL)
-		return(write(2, "Error\n", 6));
+		return(write(1, "Error\n", 6));
 	else
 		possible_sorts(stack_a, stack_b, moves, nb_elem);
 }
