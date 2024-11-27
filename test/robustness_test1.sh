@@ -1,5 +1,7 @@
 #!/bin/bash
 
+make re
+
 echo "Running Robustness Tests..."
 
 # Prueba 1: Entrada excesiva

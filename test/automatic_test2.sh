@@ -1,5 +1,7 @@
 #!/bin/bash
 
+make re
+
 generate_unique_random_numbers() {
     count=$1
     min=$2

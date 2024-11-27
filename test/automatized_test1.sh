@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# Crear directorio para salidas si no existe
-mkdir -p exits
+make re
 
 # Contador de pruebas
 total_tests=0

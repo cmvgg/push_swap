@@ -1,5 +1,7 @@
 #!/bin/bash
 
+make re
+
 echo "Running Performance Tests..."
 
 generate_unique_random_numbers() {
