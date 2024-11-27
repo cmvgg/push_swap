@@ -1,0 +1,5 @@
+Elapsed Time: 0.00 seconds
+Elapsed Time: 0.01 seconds
+Elapsed Time: 0.13 seconds
+Elapsed Time: 0.83 seconds
+Elapsed Time: 8.18 seconds

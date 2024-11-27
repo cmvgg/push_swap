@@ -1,0 +1,1 @@
+./test/automatized_test1.sh: line 18: ./push_swap: Argument list too long
