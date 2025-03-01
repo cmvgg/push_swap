@@ -52,7 +52,7 @@ int	main(int ac, char **av)
 	nb_elem = 0;
 	if (empty_file(av[1]))
 		return (0);
-	if (ac == 1)
+	if (ac == 1 || ac >= 701)
 		return (write(1, "Error\n", 6));
 	nb_elem = ft_count_numbers(av);
 	stack_a = ft_list_loading(av);

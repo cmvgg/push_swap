@@ -86,7 +86,7 @@ fi
 # Test 7: Un solo número
 echo "Running test 7..."
 ./push_swap 5 > exits/output7.txt
-diff exits/output7.txt test_archives/empty_answer.txt && echo "Test 7 Passed" || echo "Test 6 Failed"
+diff exits/output7.txt test_archives/empty_answer.txt && echo "Test 7 Passed" || echo "Test 7 Failed"
 
 # Test 8: gran numero de elementos (números únicos)
 echo "Running test 8 (this test is very long)..."

@@ -16,7 +16,6 @@ run_test() {
     total_tests=$((total_tests + 1))
     eval "$command" > exits/output_$test_name.txt 2>&1
 
-    # Contar el número de movimientos
     num_moves=$(wc -l < exits/output_$test_name.txt)
 
     if [ "$num_moves" -le "$expected_max_moves" ]; then
@@ -26,8 +25,6 @@ run_test() {
         echo "$test_name: Failed (Exceeded max moves: $num_moves moves)"
     fi
 }
-
-# 50 Pruebas Automatizadas con límites de movimientos
 
 # Prueba 1: Entrada válida simple
 run_test "simple_input" "./push_swap 2 1 3" 3
@@ -79,8 +76,8 @@ run_test "random_10_numbers" "./push_swap $ARG" 40
 ARG="1000000 999999 999998"
 run_test "large_numbers" "./push_swap $ARG" 3
 
-# Prueba 17: Entrada con números negativos (si es compatible)
-ARG="-1 -2 -3"
+# Prueba 17: Entrada con números negativos
+ARG="-2 -1 -3"
 run_test "negative_numbers" "./push_swap $ARG" 3
 
 # Prueba 18: Entrada con el mayor número posible
